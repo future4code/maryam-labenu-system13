@@ -10,7 +10,7 @@ export default async function getStudent(req: Request, res: Response){
 
         //responder a requisição
         res.status(200)
-        .send(student[0])
+        .send(student)
         
     }catch(error){
         res.status(500).send(error.message)
