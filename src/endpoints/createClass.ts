@@ -3,7 +3,7 @@ import connection from "../connection"
 import {Turma} from "../type"
 
 
-const createClass = async(req:Request, res:Response) => {
+const createClass = async(req:Request, res:Response): Promise<void> => {
     try {
         const {nome, modulo} = req.body
 
