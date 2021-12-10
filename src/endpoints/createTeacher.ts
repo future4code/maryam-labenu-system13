@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import { Teacher } from "../type";
-import { connection } from "../connection";
+import  connection  from "../connection";
 
-export async function createTeacher(
+ async function createTeacher(
     req: Request,
     res: Response
     ): Promise<void>{
@@ -30,3 +30,5 @@ export async function createTeacher(
     }
     
 }
+
+export default createTeacher

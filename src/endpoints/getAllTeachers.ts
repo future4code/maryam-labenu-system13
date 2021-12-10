@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { connection } from "../connection";
+import  connection  from "../connection"
 
 
 export async function getTeachers(
@@ -15,3 +15,5 @@ export async function getTeachers(
             res.status(500).send({message:error.message})
         }    
 }
+
+export default getTeachers
