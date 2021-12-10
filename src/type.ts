@@ -1,3 +1,4 @@
+
 export type Teacher = {
     id : string,
     nome : string,
@@ -6,3 +7,9 @@ export type Teacher = {
     docenteId: string  
 }
 
+
+export type Turma = {
+    id: string,
+    nome: string,
+    modulo?: number
+}
