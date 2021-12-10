@@ -8,8 +8,20 @@ export type Teacher = {
 }
 
 
-export type Turma = {
-    id: string,
-    nome: string,
-    modulo?: number
+// export type Turma = {
+//     id: string,
+//     nome: string,
+//     modulo?: number;
+// }
+
+export class Turma  {
+    id: string;
+    nome: string;
+    modulo?: number;
+
+    constructor(id:string, nome:string, modulo:number){
+        this.id = id;
+        this.nome = nome;
+        this.modulo = modulo
+    }
 }
