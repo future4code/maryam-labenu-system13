@@ -1,17 +1,7 @@
 
 import { Request, Response } from "express"
 
-
-async function updateTeacher(
-    req: Request,
-    res: Response
-    ): Promise<void> {
-        try {
-            const id = req.params.id
-
-
-
-
+        
 async function updateTeacher(
      req: Request,
     res: Response
